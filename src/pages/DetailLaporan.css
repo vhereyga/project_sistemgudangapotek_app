@@ -1,0 +1,46 @@
+.detail-permintaan {
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  
+  tfoot {
+    font-weight: bold;
+    background-color: #f9f9f9;
+  }
+  
+  .home-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.home-button button {
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.home-button button:hover {
+    background-color: #0056b3;
+}

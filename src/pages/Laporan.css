@@ -1,0 +1,101 @@
+.laporan-container {
+    background-color: #a4bac0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.header-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.home-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Gaya khusus untuk controls */
+.controls {
+    margin: 0px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.controls select {
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* Gaya khusus untuk search-box */
+.search-box {
+    margin: 0px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search-box input[type="text"] {
+    width: 25vh; /* Sesuaikan lebar search box */
+    padding: 8px;
+    font-size: 16px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background-color: #4472c4;
+    color: white;
+}
+
+td {
+    background-color: #d9e1f2;
+}
+
+.detail-button {
+    padding: 6px 12px;
+    background-color: #8d8d8d;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+.home-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.home-button button {
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.home-button button:hover {
+    background-color: #0056b3;
+}

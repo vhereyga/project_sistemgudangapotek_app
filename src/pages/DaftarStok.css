@@ -1,0 +1,138 @@
+/* Kontainer Utama */
+.stock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #a4bac0;
+    height: 90vh;
+    width: 100%;
+    /* Sesuaikan lebar sesuai kebutuhan */
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Judul Halaman */
+.stock-title {
+    display: flex;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Kontainer Pencarian */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 4px 0 0 4px;
+    width: 200px;
+}
+
+.search-button {
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    border: 2px solid #000;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+}
+
+/* Grup Tombol */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    /* Agar tombol ditampilkan vertikal */
+    gap: 10px;
+    /* Jarak antara tombol */
+    margin-bottom: 20px;
+    /* Jarak antara tombol dan tabel */
+    margin-right: -7.5%;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    color: #000;
+    width: 150px;
+    /* Sesuaikan lebar tombol */
+}
+
+/* Tabel Stok */
+.stock-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+.stock-table th,
+.stock-table td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+
+.stock-table th {
+    background-color: #f2b3b3;
+    font-weight: bold;
+}
+
+/* Tombol Edit */
+.edit-button {
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 2px solid #000;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+}
+
+.header-filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.jenis-dropdown {
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.home-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.home-button button {
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.home-button button:hover {
+    background-color: #0056b3;
+}

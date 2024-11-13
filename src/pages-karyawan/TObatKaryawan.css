@@ -1,0 +1,82 @@
+.tambah-obat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Mengisi tinggi viewport */
+}
+
+.tambah-obat-box {
+    background-color: #a4bac0;
+    /* Warna biru muda */
+    width: 400px;
+    /* Lebar kontainer */
+    padding: 20px;
+    /* Ruang di dalam kontainer */
+    border-radius: 10px;
+    /* Sudut melengkung */
+}
+
+.tambah-obat-title {
+    font-size: 1.5em;
+    /* Ukuran font judul */
+    font-weight: bold;
+    /* Tebal */
+    margin-bottom: 20px;
+    /* Ruang di bawah judul */
+    color: #000;
+    /* Warna hitam */
+    text-align: center;
+    /* Menempatkan judul di tengah */
+    padding: 10px 0;
+    /* Ruang vertikal pada judul */
+}
+
+.form-group {
+    display: flex;
+    /* Menggunakan flexbox untuk menyelaraskan label dan input */
+    align-items: center;
+    /* Menyelaraskan secara vertikal */
+    margin-bottom: 5px;
+    /* Mengurangi ruang di antara grup input */
+}
+
+.form-label {
+    flex: 0 0 150px;
+    /* Lebar tetap untuk label */
+    margin-right: 5px;
+    /* Mengurangi ruang di antara label dan input */
+    font-weight: bold;
+    /* Menebalkan font label */
+}
+
+.form-input {
+    flex: 1;
+    /* Input mengisi sisa ruang */
+    padding: 5px;
+    /* Ruang di dalam input */
+    border-radius: 4px;
+    /* Sudut melengkung input */
+    border: 1px solid #000;
+    /* Border hitam */
+    font-size: 1em;
+    /* Ukuran font input */
+}
+
+.confirm-button {
+    padding: 10px;
+    /* Ruang di dalam tombol */
+    width: 100%;
+    /* Lebar tombol penuh */
+    background-color: #f0f0f0;
+    /* Warna latar tombol */
+    border: 2px solid #000;
+    /* Border tombol */
+    border-radius: 8px;
+    /* Sudut melengkung tombol */
+    font-weight: bold;
+    /* Menebalkan font tombol */
+    color: #000;
+    cursor: pointer;
+    /* Kursor pointer saat hover */
+}

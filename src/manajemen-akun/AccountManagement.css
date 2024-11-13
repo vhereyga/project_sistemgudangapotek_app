@@ -1,0 +1,115 @@
+
+.account-management-container {
+    display: flex;
+    flex-direction: column; 
+    background-color: #a4bac0;
+    padding: 50px; 
+    width: 80%; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    text-align: center;
+    border-radius: 10px;
+}
+
+.home-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.home-button button {
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.home-button button:hover {
+    background-color: #0056b3;
+}
+
+.h2 {
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+.title-account {
+    margin-bottom: 40px;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.account-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.admin-section,
+.employee-section {
+    background-color: #ffffffd6;
+    padding: 10px;
+    margin: 5px;
+    text-align: start;
+    border-radius: 5px;
+    width: 40vh;
+}
+
+ul {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.account-item {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.input-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Arrange input and button vertically */
+    align-items: center; /* Center them */
+}
+
+.input-container select,
+.input-container input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 80%; /* Make the input wider */
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+/* Add this to AccountManagement.css */
+
+.select-employee {
+  width: 150px; /* Adjust the width as needed */
+  padding: 5px; /* Optional: Add some padding */
+  font-size: 14px; /* Optional: Adjust the font size */
+  border-radius: 5px; /* Optional: Add border-radius for styling */
+  border: 1px solid #ccc; /* Optional: Add border styling */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Space out buttons */
+    width: 80vh; /* Make button container wider */
+}
+
+.button-container button {
+    padding: 10px;
+    background-color: #7d7c7c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1; /* Make buttons flexible */
+    margin: 5px; /* Add some space between buttons */
+}
+
+.button-container button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
