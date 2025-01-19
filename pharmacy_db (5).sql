@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 18, 2025 at 05:12 PM
+-- Generation Time: Jan 19, 2025 at 08:28 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -31,18 +31,15 @@ CREATE TABLE `medicines` (
   `id` int(11) NOT NULL,
   `name` varchar(100) NOT NULL,
   `stock` int(11) NOT NULL,
-  `price` decimal(10,2) NOT NULL,
-  `created_at` datetime DEFAULT current_timestamp(),
-  `updated_at` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `type` enum('pill','sirup','','') NOT NULL
+  `type` enum('pill','sirup') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `medicines`
 --
 
-INSERT INTO `medicines` (`id`, `name`, `stock`, `price`, `created_at`, `updated_at`, `type`) VALUES
-(1, 'Paracetamol', 100, 1000000.00, '2025-01-18 22:58:56', '2025-01-18 22:58:56', 'sirup');
+INSERT INTO `medicines` (`id`, `name`, `stock`, `type`) VALUES
+(1, 'amoxilin', 20, 'pill');
 
 -- --------------------------------------------------------
 
@@ -123,7 +120,9 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `username`, `password`, `role`, `email`) VALUES
 (1, 'vhereyga', 'admin123', 'admin', 'vhereyga@gmail.com'),
-(2, 'karyawan', 'karyawan123', 'karyawan', 'karyawan@gmail.com');
+(2, 'karyawan', 'karyawan123', 'karyawan', 'karyawan@gmail.com'),
+(7, 'test1', 'a123', 'admin', 'a@gmail.com'),
+(9, 'test', '111', 'karyawan', '1@gmail.com');
 
 --
 -- Indexes for dumped tables
@@ -174,7 +173,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `medicines`
 --
 ALTER TABLE `medicines`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `orders`
@@ -198,7 +197,7 @@ ALTER TABLE `stock_out`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- Constraints for dumped tables
